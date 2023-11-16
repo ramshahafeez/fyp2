@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        .formbox {
+	    border: 2px solid red;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 35px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .input-box {
+
+input-box input:focus ~label,
+input-box input:valid ~label{
+top:-5px;}
+            text-align: left;
+            margin: 20px 0;
+            /*border: 1px solid red;*/ /* Red border */
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-section">
+        <div class="formbox">
+            <form action="">
+                <h1 style="text-align: center;">Property Registration Form</h1>
+                <h3 style="text-align: center;">Enter Owner's Detail:</h3>
+                                    <div class="input-box">
+        <label for="">First Name:</label>
+        <input type="text" name="myfname" id="" placeholder="Enter your first name" required>
+    </div>
+
+    <div class="input-box">
+        <label for="">Last Name:</label>
+        <input type="text" name="mylname" id="" placeholder="Enter your last name" required>
+    </div>
+    <div class="input-box">
+        <label for="">Contact Number:</label>
+        <input type="text" name="myContact_no" id="" placeholder="Enter phone number" required>
+    </div>
+    <div class="input-box">
+        <label for="">CNIC:</label>
+        <input type="text" name="mycnic" id="" placeholder="Enter 14 digit CNIC number" required size="14">
+    </div>
+    <div class="input-box">
+        <label for="">Email:</label>
+        <input type="email" name="myemail" id="" placeholder="Enter email" pattern="@">
+    </div>
+
+    <h3 style="text-align: center;">Enter Property Details:</h3>
+    <div class="input-box">
+        <label for="">Property Type:</label>
+        <input type="text" name="mypropertytype" id="" placeholder="e.g residential,commercial etc">
+    </div>
+    <div class="input-box">
+        <label for="">Street Number:</label>
+        <input type="text" name="mystreetnum" id="" placeholder="Enter street number">
+    </div>
+    <div class="input-box">
+        <label for="">Property Address:</label>
+        <input type="text" name="mypropertyadd" id="" placeholder="Enter proprty address" required>
+    </div>
+    <div class="input-box">
+        <label for="">Country:</label>
+        <select name="mycountry" id="" >
+            <option value="">Enter your Country</option>        
+<option value="America">America</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Canada">Canada</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Denmark">Denmark</option>
+<option value="Egypt">Egypt</option>
+<option value="France">France</option>
+<option value="Ghana">Ghana</option>
+<option value="Greece">Greece</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran (Islamic Republic of)</option>
+<option value="Italy">Italy</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Korea">Korea, Republic of</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mexico">Mexico</option>
+<option value="Morocco">Morocco</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russian Federation</option>
+<option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+<option value="San Marino">San Marino</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Sierra">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+<option value="Span">Spain</option>
+<option value="SriLanka">Sri Lanka</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syrian Arab Republic</option>
+<option value="Taiwan">Taiwan, Province of China</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Thailand">Thailand</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks and Caicos">Turks and Caicos Islands</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Yemen">Yemen</option>
+<option value="Serbia">Serbia</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+    </div>
+    <div class="input-box">
+        <label for="">City Code:</label>
+        <input type="text" name="mycitycode" id="" placeholder="Enter city code">
+    </div>
+    <div class="input-box">
+        <label for="">Postal/zip Code:</label>
+        <input type="text" name="mypostal/zipcode" id="" placeholder="Enter your Postal / zip code">
+    </div>
+    <div class="input-box">
+        <label for="">Property Size:</label>
+        <input type="text" name="mypropertysize" id="" placeholder="Enter size of the property in square feet">
+    </div>
+
+    <div class="input-box">
+        <label for="">Property description(optional):</label>
+        <input type="text" name="mypropertydes" id="" placeholder="Enter description about your property">
+    </div>
+
+    <div class="input-box">
+        <label for="">year of construction:</label>
+        <input type="text" name="myyoc" id="" placeholder="Enter construction year">
+    </div>
+
+    <div class="input-box">
+        <label for="">Sale price or Rental Amount:</label>
+        <input type="text" name="mypropertydes" id="" placeholder="Enter amount">
+    </div>
+    
+    <h3 style="text-align: center;">Enter Property Features</h3>
+    <div class="input-box">
+        <label for="">Number of Bedrooms:</label>
+        <input type="number" name="mybedroom" id="" placeholder="Enter Number of Bedrooms">
+    </div>
+    <div class="input-box">
+        <label for="">Number of Bathrooms:</label>
+        <input type="text" name="mybathroom" id="" placeholder="Enter Number of Bathrooms">
+    </div>
+    <div class="input-box">
+        <label for="">Amenities:</label>
+        <input type="text" name="myamenities" id="" placeholder="(e.g swimming pool, parking area,garden etc)">
+    </div>
+
+    <h3 style="text-align: center;">Enter Property History:</h3>
+    <div class="input-box">
+        <label for="">Renovations/upgrades:</label>
+        <input type="text" name="myRenovations" id="">
+    </div>
+    <div class="input-box">
+        <label for="">Reason For Sale/Rent:</label>
+        <input type="text" name="mysale/rent" id="" placeholder="Enter reason to sale or rent a house">
+    </div>
+
+    <h3 style="text-align: center;">Enter Payments Terms:</h3>
+    <div class="input-box">
+        <label for="">Invoice date:</label>
+        <input type="date" name="myinvoicedate" id="">
+    </div>
+
+    <div class="input-box">
+        <label for="">Payment long/short terms (in days):</label>
+        <input type="text" name="mypaymentdays" id="" placeholder="Enter payements terms ">
+    </div>
+
+    <div class="input-box">
+        <label for="">Lease Duration(if applicable):</label>
+        <input type="number" name="mylease" id="" placeholder="Enter reason to sale or rent a house">
+    </div>
+
+    <h3 style="text-align: center;">Submiter's Details:</h3>
+    <div class="input-box">
+        <label for="">Name:</label>
+        <input type="text" name="mySname" id="" placeholder="Enter full name" required>
+    </div>
+    <div class="input-box">
+        <label for="">Contact Number:</label>
+        <input type="text" name="mySContact" id="" placeholder="Enter phone number" required>
+    </div>
+    <div class="input-box">
+        <label for="">CNIC:</label>
+        <input type="text" name="myScnic" id="" placeholder="Enter 14 digit CNIC number" required size="14">
+    </div>
+    <div class="input-box">
+        <label for="">Email:</label>
+        <input type="email" name="mySemail" id="" placeholder="Enter valid email">
+    </div>
+
+
+
+                <input type="checkbox" required><label for="">By Submitting this form, I confirm that the information provided is accurate and complete to the best of my knowledge.</label>
+                <div style="text-align: center;" >
+                    <input style="background-color: red; color: #ffffff;" type="submit" value="Property Registered">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

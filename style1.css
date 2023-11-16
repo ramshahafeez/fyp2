@@ -1,0 +1,64 @@
+*{
+    margin: 3px;
+    padding: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+}
+.box{
+    height: 490px;
+    width: 400px;
+    position: absolute;
+    right: 50%;
+    left: 35%;
+    top: 10%;
+    transform: translateY(-50%,-50%);
+    border: solid red;
+    text-align: center;
+    border-radius: 1em;
+}
+.box h1{
+    font-size: 1.7em;
+    color: solid red;
+}
+.box:hover{
+    box-shadow: 0 0 80px red;
+}
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"]{
+    padding: 0.7em;
+    display: block;
+    text-align: left;
+    margin: 20px auto;
+    font-size: 1em;
+    font-weight: 3px;
+    background: none;
+    outline:none;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+.box input[type="submit"]{
+    font-weight:bold ;
+    font-size: 1em;
+    padding:0.5em ;
+    display: block;
+    margin: 20px auto 10px;
+    text-align: center;
+    outline: none;
+    color: white;
+    background-color: red;
+    border: red;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    
+}
